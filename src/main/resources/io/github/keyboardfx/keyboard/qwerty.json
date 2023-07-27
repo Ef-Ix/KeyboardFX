@@ -1,0 +1,208 @@
+{
+  "name": "qwerty",
+  "keys": {
+    "1": {
+      "character": "1",
+      "upperCase": "!",
+      "altGr": "¹"
+    },
+    "2": {
+      "character": "2",
+      "upperCase": "@",
+      "altGr": "²"
+    },
+    "3": {
+      "character": "3",
+      "upperCase": "#",
+      "altGr": "³"
+    },
+    "4": {
+      "character": "4",
+      "upperCase": "$",
+      "altGr": "£"
+    },
+    "5": {
+      "character": "5",
+      "upperCase": "%",
+      "altGr": "¢"
+    },
+    "6": {
+      "character": "6",
+      "upperCase": "^",
+      "altGr": "¬"
+    },
+    "7": {
+      "character": "7",
+      "upperCase": "&",
+      "altGr": "§"
+    },
+    "8": {
+      "character": "8",
+      "upperCase": "*",
+      "altGr": "º"
+    },
+    "9": {
+      "character": "9",
+      "upperCase": "("
+    },
+    "10": {
+      "character": "0",
+      "upperCase": ")"
+    },
+    "11": {
+      "character": "-",
+      "upperCase": "_",
+      "altGr": "\\"
+    },
+    "12": {
+      "character": "=",
+      "upperCase": "+"
+    },
+    "13": {
+      "character": "q",
+      "upperCase": "Q",
+      "altGr": "@"
+    },
+    "14": {
+      "character": "w",
+      "upperCase": "W"
+    },
+    "15": {
+      "character": "e",
+      "upperCase": "E",
+      "altGr": "€"
+    },
+    "16": {
+      "character": "r",
+      "upperCase": "R"
+    },
+    "17": {
+      "character": "t",
+      "upperCase": "T"
+    },
+    "18": {
+      "character": "y",
+      "upperCase": "Y"
+    },
+    "19": {
+      "character": "u",
+      "upperCase": "U"
+    },
+    "20": {
+      "character": "i",
+      "upperCase": "I"
+    },
+    "21": {
+      "character": "o",
+      "upperCase": "O"
+    },
+    "22": {
+      "character": "p",
+      "upperCase": "P"
+    },
+    "23": {
+      "character": "[",
+      "upperCase": "{"
+    },
+    "24": {
+      "character": "]",
+      "upperCase": "}"
+    },
+    "25": {
+      "character": "a",
+      "upperCase": "A"
+    },
+    "26": {
+      "character": "s",
+      "upperCase": "S"
+    },
+    "27": {
+      "character": "d",
+      "upperCase": "D"
+    },
+    "28": {
+      "character": "f",
+      "upperCase": "F"
+    },
+    "29": {
+      "character": "g",
+      "upperCase": "G"
+    },
+    "30": {
+      "character": "h",
+      "upperCase": "H"
+    },
+    "31": {
+      "character": "j",
+      "upperCase": "J"
+    },
+    "32": {
+      "character": "k",
+      "upperCase": "K"
+    },
+    "33": {
+      "character": "l",
+      "upperCase": "L"
+    },
+    "34": {
+      "character": ";",
+      "upperCase": ":"
+    },
+    "35": {
+      "character": "'",
+      "upperCase": "\""
+    },
+    "36": {
+      "character": "#",
+      "upperCase": "~"
+    },
+    "37": {
+      "character": "|",
+      "upperCase": "\\"
+    },
+    "38": {
+      "character": "z",
+      "upperCase": "Z"
+    },
+    "39": {
+      "character": "x",
+      "upperCase": "X"
+    },
+    "40": {
+      "character": "c",
+      "upperCase": "C"
+    },
+    "41": {
+      "character": "v",
+      "upperCase": "V"
+    },
+    "42": {
+      "character": "b",
+      "upperCase": "B"
+    },
+    "43": {
+      "character": "n",
+      "upperCase": "N"
+    },
+    "44": {
+      "character": "m",
+      "upperCase": "M"
+    },
+    "45": {
+      "character": ",",
+      "upperCase": "<"
+    },
+    "46": {
+      "character": ".",
+      "upperCase": ">"
+    },
+    "47": {
+      "character": "/",
+      "upperCase": "?"
+    },
+    "48": {
+      "character": "@",
+      "upperCase": "`"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+
+    // https://plugins.gradle.org/plugin/org.openjfx.javafxplugin
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+group 'io.github.keyboardfx'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation group: 'org.testfx', name: 'testfx-junit5', version: '4.0.16-alpha'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+javafx {
+    version = '20'
+    modules = [ 'javafx.controls', 'javafx.fxml']
+
+}
