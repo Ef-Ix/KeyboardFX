@@ -168,6 +168,7 @@ public class Keyboard {
             SHIFT_SELECTED.setSelected(false);
             CAPS_SELECTED.setSelected(false);
         }
+        update();
     }
 
     private void alt() {
@@ -177,6 +178,7 @@ public class Keyboard {
             SHIFT_SELECTED.setSelected(false);
             CAPS_SELECTED.setSelected(false);
         }
+        update();
     }
 
     private void space() {
