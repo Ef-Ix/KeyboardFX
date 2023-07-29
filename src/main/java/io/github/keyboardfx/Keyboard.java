@@ -1,12 +1,12 @@
 package io.github.keyboardfx;
 
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
-import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -63,17 +63,6 @@ public class Keyboard {
     }
 
     /**
-     * Sets the layout of the keyboard.
-     *
-     * @param layout the layout to set
-     * @return the keyboard
-     */
-    public Keyboard setLayout(Layout layout) {
-        this.layout = layout;
-        return this;
-    }
-
-    /**
      * Updates the keyboard layout.
      * Should be called after the layout has been changed.
      *
@@ -105,7 +94,7 @@ public class Keyboard {
     }
 
     @FXML
-    void onKeyPressed(MouseEvent event) {
+    void onKeyPressed(ActionEvent event) {
         if (event.getSource() instanceof Button button) {
             switch (button.getId()) {
                 case "ESC" -> esc();
@@ -137,13 +126,16 @@ public class Keyboard {
 
     private void altGr() {
         press(Key.ALT_GR);
-        if (CAPS_SELECTED.isSelected() && SHIFT_SELECTED.isSelected()) {
-            CAPS_SELECTED.setSelected(false);
-            SHIFT_SELECTED.setSelected(false);
+        if (ALT_SELECTED.isSelected() && CTRL_SELECTED.isSelected()) {
+            ALT_SELECTED.setSelected(false);
+            CTRL_SELECTED.setSelected(false);
         } else {
-            CAPS_SELECTED.setSelected(true);
-            SHIFT_SELECTED.setSelected(true);
+            ALT_SELECTED.setSelected(true);
+            CTRL_SELECTED.setSelected(true);
         }
+        SHIFT_SELECTED.setSelected(false);
+        CAPS_SELECTED.setSelected(false);
+        update();
     }
 
     private void esc() {
@@ -229,11 +221,11 @@ public class Keyboard {
         if (CTRL_SELECTED.isSelected() && ALT_SELECTED.isSelected() && key.altGr() != null) text = key.altGr();
 
         String finalText = text;
-        textConsumers.forEach(consumer -> consumer.accept(finalText));
+        this.textConsumers.forEach(consumer -> consumer.accept(finalText));
     }
 
     private void press(Key key) {
-        pressConsumers.forEach(consumer -> consumer.accept(key));
+        this.pressConsumers.forEach(consumer -> consumer.accept(key));
     }
 
     /**
@@ -255,6 +247,46 @@ public class Keyboard {
      */
     public Keyboard registerPressConsumer(Consumer<Key> consumer) {
         this.pressConsumers.add(consumer);
+        return this;
+    }
+
+    /**
+     * Clears all registered press consumers.
+     *
+     * @return the keyboard
+     */
+    public Keyboard clearPressConsumers() {
+        this.pressConsumers.clear();
+        return this;
+    }
+
+    /**
+     * Clears all registered text consumers.
+     *
+     * @return the keyboard
+     */
+    public Keyboard clearTextConsumers() {
+        this.textConsumers.clear();
+        return this;
+    }
+
+    /**
+     * Returns the layout of the keyboard.
+     *
+     * @return the layout of the keyboard
+     */
+    public Layout getLayout() {
+        return this.layout;
+    }
+
+    /**
+     * Sets the layout of the keyboard.
+     *
+     * @param layout the layout to set
+     * @return the keyboard
+     */
+    public Keyboard setLayout(Layout layout) {
+        this.layout = layout;
         return this;
     }
 
