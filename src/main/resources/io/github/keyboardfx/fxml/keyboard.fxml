@@ -1,100 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
 <!-- > Based on the ISO 120-105 keyboard -->
-
-
 <!--suppress JavaFxUnresolvedFxIdReference -->
-<VBox fx:id="keyboard" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="2.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.keyboardfx.Keyboard">
+
+<VBox fx:id="keyboard" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="2.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.keyboardfx.Keyboard">
     <padding>
         <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
     </padding>
     <HBox alignment="CENTER" prefHeight="17.0" prefWidth="548.0" spacing="4.0">
         <VBox.margin>
-            <Insets bottom="2.0"/>
+            <Insets bottom="2.0" />
         </VBox.margin>
-        <CheckBox fx:id="SHIFT_SELECTED" disable="true" mnemonicParsing="false" text="SHIFT"/>
-        <CheckBox fx:id="CAPS_SELECTED" disable="true" mnemonicParsing="false" text="CAPS"/>
-        <CheckBox fx:id="CTRL_SELECTED" disable="true" mnemonicParsing="false" text="CTRL"/>
-        <CheckBox fx:id="ALT_SELECTED" disable="true" mnemonicParsing="false" text="ALT"/>
+        <CheckBox fx:id="SHIFT_SELECTED" disable="true" mnemonicParsing="false" text="SHIFT" />
+        <CheckBox fx:id="CAPS_SELECTED" disable="true" mnemonicParsing="false" text="CAPS" />
+        <CheckBox fx:id="CTRL_SELECTED" disable="true" mnemonicParsing="false" text="CTRL" />
+        <CheckBox fx:id="ALT_SELECTED" disable="true" mnemonicParsing="false" text="ALT" />
     </HBox>
     <HBox alignment="CENTER" spacing="2.0">
-        <Button onMouseReleased="#onKeyPressed" fx:id="ESC" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" text="esc" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON1" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON2" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON3" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON4" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON5" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON6" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON7" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON8" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON9" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON10" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON11" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON12" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BACKSPACE" mnemonicParsing="false" prefHeight="34.0" prefWidth="85.0" text="⌫" />
+        <Button fx:id="ESC" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="39.0" text="esc" />
+        <Button fx:id="BUTTON1" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON2" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON3" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON4" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON5" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON6" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON7" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON8" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON9" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON10" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON11" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON12" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BACKSPACE" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="80.0" text="⌫" />
     </HBox>
     <HBox alignment="CENTER" spacing="2.0">
-        <Button onMouseReleased="#onKeyPressed" fx:id="TAB" mnemonicParsing="false" prefHeight="34.0" prefWidth="51.0" text="↹" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON13" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON14" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON15" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON16" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON17" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON18" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON19" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON20" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON21" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON22" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON23" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON24" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="SWAP" mnemonicParsing="false" prefHeight="34.0" prefWidth="68.0" text="↺" />
+        <Button fx:id="TAB" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="51.0" text="↹" />
+        <Button fx:id="BUTTON13" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON14" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON15" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON16" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON17" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON18" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON19" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON20" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON21" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON22" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON23" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON24" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="SWAP" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="68.0" text="↺" />
     </HBox>
     <HBox alignment="CENTER" spacing="2.0">
-        <Button onMouseReleased="#onKeyPressed" fx:id="CAPS" mnemonicParsing="false" prefHeight="34.0" prefWidth="51.0" text="↓" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON25" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON26" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON27" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON28" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON29" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON30" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON31" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON32" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON33" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON34" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON35" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON36" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="ENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="68.0" text="↵" />
+        <Button fx:id="CAPS" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="51.0" text="↓" />
+        <Button fx:id="BUTTON25" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON26" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON27" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON28" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON29" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON30" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON31" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON32" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON33" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON34" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON35" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON36" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="ENTER" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="68.0" text="↵" />
     </HBox>
     <HBox alignment="CENTER" spacing="2.0">
-        <Button onMouseReleased="#onKeyPressed" fx:id="LEFT_SHIFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="51.0" text="↑" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON37" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON38" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON39" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON40" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON41" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON42" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON43" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON44" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON45" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON46" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON47" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="BUTTON48" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="RIGHT_SHIFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="68.0" text="↑" />
+        <Button fx:id="LEFT_SHIFT" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="51.0" text="↑" />
+        <Button fx:id="BUTTON37" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON38" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON39" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON40" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON41" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON42" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON43" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON44" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON45" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON46" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON47" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="BUTTON48" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="34.0" />
+        <Button fx:id="RIGHT_SHIFT" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="68.0" text="↑" />
     </HBox>
     <HBox alignment="CENTER" spacing="2.0">
-        <Button onMouseReleased="#onKeyPressed" fx:id="LEFT_CTRL_CMD" mnemonicParsing="false" prefHeight="34.0" prefWidth="60.0" text="◆" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="LEFT_OS" mnemonicParsing="false" prefHeight="34.0" prefWidth="51.0" text="OS" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="ALT" mnemonicParsing="false" prefHeight="34.0" prefWidth="51.0" text="alt" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="SPACE" mnemonicParsing="false" prefHeight="34.0" prefWidth="136.0" text="⎵" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="ALT_GR" mnemonicParsing="false" prefHeight="34.0" prefWidth="60.0" text="alt gr" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="RIGHT_OS" mnemonicParsing="false" prefHeight="34.0" prefWidth="60.0" text="OS" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="MENU" mnemonicParsing="false" prefHeight="34.0" prefWidth="60.0" text="⇶" />
-        <Button onMouseReleased="#onKeyPressed" fx:id="RIGHT_CTRL_CMD" mnemonicParsing="false" prefHeight="34.0" prefWidth="60.0" text="◆" />
+        <Button fx:id="LEFT_CTRL_CMD" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="60.0" text="◆" />
+        <Button fx:id="LEFT_OS" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="51.0" text="OS" />
+        <Button fx:id="ALT" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="51.0" text="alt" />
+        <Button fx:id="SPACE" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="136.0" text="⎵" />
+        <Button fx:id="ALT_GR" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="60.0" text="alt gr" />
+        <Button fx:id="RIGHT_OS" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="60.0" text="OS" />
+        <Button fx:id="MENU" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="60.0" text="⇶" />
+        <Button fx:id="RIGHT_CTRL_CMD" mnemonicParsing="false" onAction="#onKeyPressed" prefHeight="34.0" prefWidth="60.0" text="◆" />
     </HBox>
 </VBox>
